@@ -1,6 +1,6 @@
 # CP2 – Previsão de Churn com Redes Neurais MLP
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Codebynaty/NOME_DO_REPO/blob/main/CP2_MLP_RN.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Codebynaty/telco-churn-mlp/blob/main/CP2_MLP_RN.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.21-orange)
 
