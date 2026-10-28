@@ -1,6 +1,6 @@
 # CP2 – Previsão de Churn com Redes Neurais MLP
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SEU_USUARIO/NOME_DO_REPO/blob/main/cp2_mlp_rn.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Codebynaty/NOME_DO_REPO/blob/main/CP2_MLP_RN.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.21-orange)
 
@@ -120,9 +120,9 @@ Métricas da classe positiva (churn) na **validação**:
 | E8 | 32-32 ReLU | 0,501 | 0,751 | 0,519 | 0,821 | 0,636 | 0,014 |
 | E9 | 32-32-32 ReLU | 0,494 | 0,743 | 0,510 | 0,782 | 0,618 | 0,038 |
 
-![Curvas de aprendizado](images/curvas_aprendizado.png)
+![Curvas de aprendizado](curvas_aprendizado.png)
 
-![Complexidade da arquitetura x F1](images/complexidade_vs_f1.png)
+![Complexidade da arquitetura x F1](complexidade_vs_f1.png)
 
 **O que a comparação mostrou**
 
@@ -147,7 +147,7 @@ Avaliação única no conjunto de teste, sem retreino e com limiar 0,5:
 
 Matriz de confusão no teste: **VN = 566, FP = 210, FN = 66, VP = 215**.
 
-![Matrizes de confusão da E2](images/matriz_confusao_e2.png)
+![Matrizes de confusão da E2](matriz_confusao_e2.png)
 
 Na prática, de cada 100 clientes que cancelam, o modelo identifica cerca de 77. Dos clientes sinalizados como risco, cerca de metade realmente cancelaria. Para uma ação de retenção essa troca é aceitável, pois perder um cliente custa mais do que contatar um que ficaria. O resultado foi consistente com a validação, indicando boa generalização.
 
@@ -167,7 +167,7 @@ Clique no botão **Open in Colab** no topo e execute **Ambiente de execução �
 ### Localmente
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+git clone https://github.com/Codebynaty/NOME_DO_REPO.git
 cd NOME_DO_REPO
 
 python -m venv venv
@@ -175,7 +175,7 @@ source venv/bin/activate        # Linux/macOS
 venv\Scripts\activate           # Windows
 
 pip install -r requirements.txt
-jupyter notebook cp2_mlp_rn.ipynb
+jupyter notebook CP2_MLP_RN.ipynb
 ```
 
 Os experimentos originais foram executados no Colab com pandas 2.2.3, numpy 2.1.3, scikit-learn 1.6.1, TensorFlow 2.21.0 e Keras 3.13.2.
@@ -184,9 +184,11 @@ Os experimentos originais foram executados no Colab com pandas 2.2.3, numpy 2.1.
 
 ```
 .
-├── cp2_mlp_rn.ipynb          # Notebook com os experimentos
-├── Relatorio_CP2_MLP.docx    # Relatório completo (opcional)
-├── images/                   # Figuras usadas no README
+├── CP2_MLP_RN.ipynb              # Notebook com os experimentos
+├── Relatorio_CP2_MLP (1).docx    # Relatório completo
+├── complexidade_vs_f1.png        # Figuras usadas no README
+├── curvas_aprendizado.png
+├── matriz_confusao_e2.png
 ├── requirements.txt
 └── README.md
 ```
